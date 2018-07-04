@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Week 2 Personal Project -ticTacToeThing (pure CSS/pure JS)</title>
+  
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <head>
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <audio id="pick-up-sound" ><source src ="https://freesound.org/people/elmasmalo1/sounds/377017/download/377017__elmasmalo1__notification-pop.wav" type = "audio/wav"></audio>
+  <audio id="drop-sound"><source src ="https://freesound.org/people/supersound23/sounds/372182/download/372182__supersound23__pop.mp3" type="audio/mp3"></audio>
+</head>
+  <audio id="restart-sound"><source src ="https://freesound.org/people/jugraf/sounds/370209/download/370209__jugraf__fail-down.wav" type = "audio/wav"></audio>
+  <audio id="win-sound"><source src ="https://freesound.org/people/mickleness/sounds/269198/download/269198__mickleness__game-win.mp3" type = "audio/mp3"></audio>
+  <audio id="draw-sound"><source src ="https://freesound.org/people/Wagna/sounds/242208/download/242208__wagna__failfare.mp3" type = "audio/mp3"></audio>
+</head>
+<body>
+
+
+  
+  
+  <div class="container container-main">
+
+    <div class="container container-row" id="row1">
+      <div class="container container-box container-box-row1" id="box1" ondragover="allowDrop(event)" ondrop = "makeMove2(event)"></div>
+      <div class="container container-box container-box-row1" id="box2" ondragover="allowDrop(event)" ondrop = "makeMove2(event)"></div>
+      <div class="container container-box container-box-row1" id="box3" ondragover="allowDrop(event)" ondrop = "makeMove2(event)"></div>
+    </div>
+    <div class="container container-row" id="row2">
+      <div class="container container-box container-box-row2" id="box4" ondragover="allowDrop(event)" ondrop = "makeMove2(event)"></div>
+      <div class="container container-box container-box-row2" id="box5" ondragover="allowDrop(event)" ondrop = "makeMove2(event)"></div>
+      <div class="container container-box container-box-row2" id="box6" ondragover="allowDrop(event)" ondrop = "makeMove2(event)"></div>
+    </div>
+    <div class="container container-row" id="row3">
+      <div class="container container-box container-box-row3" id="box7" ondragover="allowDrop(event)" ondrop = "makeMove2(event)"></div>
+      <div class="container container-box container-box-row3" id="box8" ondragover="allowDrop(event)" ondrop = "makeMove2(event)"></div>
+      <div class="container container-box container-box-row3" id="box9" ondragover="allowDrop(event)" ondrop = "makeMove2(event)"></div>
+    </div>
+    
+  </div>
+  
+  
+  
+  <div class="container container-HUD" id="HUD">
+    <div id = "Reset" class="resetButton hide-button" style = "display: none;" onclick = "resetGame()"><h1 class = "winanimation">RESET<h1></div>
+    <div id = "X" draggable = "true" ondragstart = "makeMove(event)" ondragend = "playDropSound()" class="container container-HUD-segment container-HUD-segment-button"><h1 id ="HUD-segment2" class="button">X</h1></div>
+    <div id = "O" draggable="true" ondragstart = "makeMove(event)" ondragend = "playDropSound()" class="container container-HUD-segment container-HUD-segment-button"><h1 id ="HUD-segment3" class="button">O</h1></div>  
+  </div>
+      
+  <div class = "score-counter">
+    <div class = "score-counter-display"><h2 id = "x-count">X: 0</h2></div>
+    <div class = "score-counter-display"><h2 id = "o-count">O: 0</h2></div>
+  </div>
+  
+  
+ 
+</body>
+  
+  
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>

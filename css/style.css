@@ -1,0 +1,230 @@
+body {
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(to right, #fc00ff, #00dbde);
+}
+.container-main {
+  margin: 0px auto 0px auto;
+  height: 550px;
+  width: 550px;
+    
+  border-style: solid;
+  border-color: white;
+  border-radius: 10px;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container-row {
+  height: 33.33%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+ 
+  display: flex;
+}
+.container-box {
+  height: 100%;
+  width: 33.33%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container-box-row2 {
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-color: white;
+}
+#box2 {
+  border-left-style: solid;
+  border-right-style: solid;
+  border-color: white;
+}
+#box5 {
+  border-left-style: solid;
+  border-right-style: solid;
+  border-color: white;
+}
+#box8 {
+  border-left-style: solid;
+  border-right-style: solid;
+  border-color: white;
+}
+.container-HUD {
+  margin: 30px auto -10px auto;
+  padding: 0;
+  
+  height: 100px;
+  width: 600px;
+  
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.container-HUD-segment-display {
+  margin: 0;
+  padding: 0;
+  
+  height: 100%;
+  width: 40%;
+  
+  background-color: white;
+  border-radius: 10px;
+  border-width: 3px;
+  
+  font-size: 12px;
+  font-family: "Roboto";
+  color: white;
+}
+
+.container-HUD-segment-button {
+  height: 100%;
+  width: 16.66%;
+  
+  border-style: solid;
+  border-color: white;
+  border-radius: 100%;
+  
+  background-color: white;
+  
+  font-size: 130%;
+  color: black;
+   
+  -webkit-user-select: none;        
+  -moz-user-select: none; 
+  -ms-user-select: none; 
+  user-select: none;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  
+  
+}
+.container-HUD-segment-button:hover{
+  height: 129.6%;
+  width: 21.66%;
+  
+  font-size: 30px;
+}
+#HUD-segment2 {
+  background: linear-gradient(to right, 
+#6d80ee, 
+#5f8eed);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Roboto";
+}
+#HUD-segment3 {
+    background: linear-gradient(to right, 
+#33b5e8, 
+#21c4e6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Roboto";
+}
+
+p {
+  font-family: "Roboto";
+  font-size: 150px;
+  color: white;
+  -webkit-user-select: none;        
+  -moz-user-select: none; 
+  -ms-user-select: none; 
+  user-select: none
+}
+.winanimation {
+  animation: rainbow-move 1s linear 0s infinite;
+}
+
+@keyframes rainbow-move {
+  0% {}
+  8% {color: red;}
+  16% {color: orange;}
+  24% {color: yellow;}
+  32% {color: green;}
+  40% {color: blue;}
+  48%{color: indigo;}
+  56%{color: violet;}
+  64%{color: violet;}
+  72%{color: indigo;}
+  80%{color: blue;}
+  88%{color: green;}
+  96%{color: yellow;}
+  100%{color: orange;}
+}
+
+#Reset {
+  height: 100%;
+  width: 20%;
+  
+  border-radius: 10px;
+  
+  background-color: white;
+  
+  
+  font-family: "Roboto";
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hide-button {
+  display: none;
+}
+
+.score-counter {
+  height: 150px;
+  width: 60px;
+  
+  
+  border-radius: 10px;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  margin: auto;
+  position: relative;
+  right: 275px;
+  bottom: 655px;
+  
+
+  
+  
+ 
+  
+  
+}
+.score-counter-display {
+  height: 50%;
+  width: 100%;
+  
+  padding-left: 10px;
+  
+  font-family: "Roboto";
+  color: #f906fd;
+  
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  
+  -webkit-user-select: none;        
+  -moz-user-select: none; 
+  -ms-user-select: none; 
+   user-select: none;
+
+  
+}
+
+.score-counter-display {
+  margin: 5px;
+  border-radius: 10px;
+  background-color: white;
+}
+
+
