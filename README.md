@@ -7,7 +7,7 @@ Pure CSS/Pure JS.
 
 ### Prerequisites
 
-For now, the assets are imported via weblinks.
+For now, the assets are imported via links.
 
 
 ### Issues
